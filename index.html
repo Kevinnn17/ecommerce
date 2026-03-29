@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KRIUKITA - Perancangan Ekosistem Digital</title>
+    <title>ERLAN SNACK - Perancangan Ekosistem Digital</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -38,8 +38,8 @@
           class="inline-block p-1 rounded-full bg-gradient-to-tr from-orange-500 to-yellow-400 mb-4 shadow-lg"
         >
           <img
-            src="https://ui-avatars.com/api/?name=K+K&background=fff&color=ea580c&size=128"
-            alt="Logo"
+            src="assets/logo.jpeg"
+            alt="Logo KRIUKITA"
             class="w-24 h-24 rounded-full border-4 border-white object-cover"
           />
         </div>
@@ -47,7 +47,7 @@
           id="brand-name"
           class="text-3xl font-extrabold text-orange-600 tracking-tighter uppercase italic"
         >
-          KRIUKITA
+          ERLAN SNACK
         </h1>
         <p
           id="brand-tagline"
@@ -62,21 +62,34 @@
           onclick="handleOrder('Umum')"
           class="w-full flex items-center justify-between p-4 bg-green-500 text-white rounded-2xl shadow-lg hover:bg-green-600 transition-all font-bold"
         >
-          <span><i class="fab fa-whatsapp mr-2"></i> Pesan via WhatsApp</span>
+          <span
+            ><i class="fab fa-whatsapp mr-2 text-xl"></i> Pesan via
+            WhatsApp</span
+          >
           <i class="fas fa-external-link-alt opacity-50 text-xs"></i>
         </button>
+
         <a
-          href="#"
-          class="w-full flex items-center justify-between p-4 bg-black text-white rounded-2xl font-bold"
+          href="https://www.tiktok.com/@erlan.snack?_r=1&_t=ZS-94gMImggMrK"
+          target="_blank"
+          class="w-full flex items-center justify-between p-4 bg-black text-white rounded-2xl font-bold shadow-md hover:scale-[1.02] transition-transform"
         >
-          <span><i class="fab fa-tiktok mr-2"></i> TikTok (Konten Viral)</span>
+          <span
+            ><i class="fab fa-tiktok mr-2 text-xl"></i> TikTok (Konten
+            Viral)</span
+          >
           <i class="fas fa-play-circle opacity-50 text-xs"></i>
         </a>
+
         <a
-          href="#"
-          class="w-full flex items-center justify-between p-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl font-bold"
+          href="https://www.instagram.com/kevinlandunau/"
+          target="_blank"
+          class="w-full flex items-center justify-between p-4 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 text-white rounded-2xl font-bold shadow-md hover:scale-[1.02] transition-transform"
         >
-          <span><i class="fab fa-instagram mr-2"></i> Instagram (Katalog)</span>
+          <span
+            ><i class="fab fa-instagram mr-2 text-xl"></i> Instagram
+            (Katalog)</span
+          >
           <i class="fas fa-camera opacity-50 text-xs"></i>
         </a>
       </div>
@@ -92,7 +105,7 @@
             id="brand-story"
             class="text-xs leading-relaxed text-gray-600 text-justify"
           >
-            Kriukita bermula dari resep rahasia dapur keluarga yang dipadukan
+            Erlan Snack bermula dari resep rahasia dapur keluarga yang dipadukan
             dengan teknik penggorengan modern untuk menghasilkan keripik super
             tipis dan renyah maksimal. Setiap keping bumbunya asli!
           </p>
@@ -119,7 +132,6 @@
     </div>
 
     <script>
-      // 1. Data Produk (Bisa ditambah dengan mudah)
       const products = [
         {
           name: "Singkong Balado Spicy",
@@ -135,7 +147,6 @@
         },
       ];
 
-      // 2. Fungsi untuk Menampilkan Produk
       const renderProducts = () => {
         const container = document.getElementById("product-container");
         container.innerHTML = products
@@ -163,16 +174,14 @@
           .join("");
       };
 
-      // 3. Fungsi Pesan via WhatsApp
       const handleOrder = (productName) => {
-        const waNumber = "6285333077252"; // GANTI DENGAN NOMOR WA KELOMPOKMU
+        const waNumber = "6285333077252";
         const text = encodeURIComponent(
-          `Halo Kriukita! Saya tertarik mau pesan ${productName}. Bisa dibantu?`,
+          `Halo Erlan Snack! Saya tertarik mau pesan ${productName}. Bisa dibantu?`,
         );
         window.open(`https://wa.me/${waNumber}?text=${text}`, "_blank");
       };
 
-      // Jalankan fungsi saat halaman dimuat
       window.onload = renderProducts;
     </script>
   </body>
